@@ -66,7 +66,7 @@ A full-stack to-do application with a paper-and-desk aesthetic. Create boards (t
 1. **Clone and install**
    ```bash
    cd to-do-app-version
-   npm install
+   cd frontend && npm install && cd ..
    cd backend && pip install -r requirements.txt && cd ..
    ```
 
@@ -76,7 +76,7 @@ A full-stack to-do application with a paper-and-desk aesthetic. Create boards (t
 
 3. **Run**
    - Terminal 1 (backend): `cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000`
-   - Terminal 2 (frontend): `npm run dev`
+   - Terminal 2 (frontend): `cd frontend && npm run dev`
    - Open **http://localhost:3000**
 
 4. **Try without backend**
@@ -106,7 +106,7 @@ Enable 2FA → Google Account → Security → App passwords → Generate for �
 
 ### Frontend (optional)
 
-Create `.env` or `.env.local` in the project root if the API is not on localhost:
+Create `.env` or `.env.local` in the **frontend** folder if the API is not on localhost:
 
 | Variable | Description | Default |
 | -------- | ----------- | ------- |
@@ -162,6 +162,7 @@ Open a **new terminal** in the project root:
 
 ```bash
 cd to-do-app-version   # if not already there
+cd frontend
 npm install
 npm run dev
 ```
@@ -207,26 +208,31 @@ to-do-app-version/
 │   ├── main.py           # FastAPI app, auth, boards, tasks
 │   ├── requirements.txt
 │   └── .env.example
-├── components/
-│   ├── EditTaskModal.tsx
-│   ├── Layout.tsx
-│   ├── TaskItem.tsx
-│   └── ui/
-│       └── LayoutElements.tsx
-├── pages/
-│   ├── BoardView.tsx     # Single board + task list
-│   ├── Dashboard.tsx     # Board list
-│   └── Login.tsx         # Auth (login, register, OTP, reset)
-├── services/
-│   └── mockService.ts    # API client
-├── contexts.ts           # Auth + demo state
-├── demoData.ts           # Seed data for demo mode
-├── types.ts
-├── App.tsx
-├── index.tsx
-├── index.html
-├── vite.config.ts
-├── package.json
+├── frontend/
+│   ├── components/
+│   │   ├── EditTaskModal.tsx
+│   │   ├── Layout.tsx
+│   │   ├── TaskItem.tsx
+│   │   └── ui/
+│   │       └── LayoutElements.tsx
+│   ├── pages/
+│   │   ├── BoardView.tsx     # Single board + task list
+│   │   ├── Dashboard.tsx     # Board list
+│   │   └── Login.tsx         # Auth (login, register, OTP, reset)
+│   ├── services/
+│   │   └── mockService.ts    # API client
+│   ├── contexts.ts           # Auth + demo state
+│   ├── demoData.ts           # Seed data for demo mode
+│   ├── types.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── index.html
+│   ├── index.css
+│   ├── vite.config.ts
+│   ├── tsconfig.json
+│   └── package.json
+├── docs/
+│   └── screenshots/
 └── README.md
 ```
 
@@ -271,4 +277,4 @@ Tasks on a board: **filters** (All / Todo / In Progress / Done), **search**, and
 
 ## License
 
-Private / project use.
+Free to use.
