@@ -5,6 +5,28 @@ A full-stack to-do application with a paper-and-desk aesthetic. Create boards (t
 > **Screenshots:** Add `login.png`, `dashboard.png`, and `board-tasks.png` to `docs/screenshots/` after running the app to see the app previews below.
 
 ---
+### Login & Registration
+
+Login screen with options for **password**, **magic code (OTP)**, and **registration**. The **Demo** button opens the app with sample data only (no database).
+
+<!-- Add docs/screenshots/login.png -->
+![Login](docs/screenshots/login.png)
+
+### Dashboard (Boards)
+
+Overview of your **boards** (task lists). Create new boards and click one to open its tasks.
+
+<!-- Add docs/screenshots/dashboard.png -->
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Board View (Tasks)
+
+Tasks on a board: **filters** (All / Todo / In Progress / Done), **search**, and add/edit/delete. Cards show priority, due date, and completion (mark done from card or edit modal).
+
+<!-- Add docs/screenshots/board-tasks.png -->
+![Board and tasks](docs/screenshots/board-tasks.png)
+
+---
 
 ## Table of Contents
 
@@ -236,39 +258,11 @@ to-do-app-version/
 
 1. Run the app locally (see [Quick Start](#quick-start) or [Running Locally](#running-locally-detailed)).
 2. Open **http://localhost:3000** and sign in (or use Demo).
-3. Capture screenshots and save them in `docs/screenshots/` as:
+3. Capture screenshots and save them in `docs/screenshots/`
 
-| File | What to capture |
-|------|-----------------|
-| `login.png` | Login/registration page (password, OTP, register, Demo) |
-| `dashboard.png` | Dashboard with at least one board visible |
-| `board-tasks.png` | A board open with task cards, filters, and search bar |
 
-The README will then show these images in the sections below.
-
-### Login & Registration
-
-Login screen with options for **password**, **magic code (OTP)**, and **registration**. The **Demo** button opens the app with sample data only (no database).
-
-<!-- Add docs/screenshots/login.png -->
-![Login](docs/screenshots/login.png)
-
-### Dashboard (Boards)
-
-Overview of your **boards** (task lists). Create new boards and click one to open its tasks.
-
-<!-- Add docs/screenshots/dashboard.png -->
-![Dashboard](docs/screenshots/dashboard.png)
-
-### Board View (Tasks)
-
-Tasks on a board: **filters** (All / Todo / In Progress / Done), **search**, and add/edit/delete. Cards show priority, due date, and completion (mark done from card or edit modal).
-
-<!-- Add docs/screenshots/board-tasks.png -->
-![Board and tasks](docs/screenshots/board-tasks.png)
-
----
 
 ## License
+Free to use for Everyone (non-commercial use Only)
 
-Private / project use.
+Made With ❤️ by Prince7-jain (Prince Jain)
