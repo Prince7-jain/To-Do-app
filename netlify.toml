@@ -3,3 +3,10 @@
   command = "npm run build"
   publish = "dist"
 
+[build.environment]
+  # Netlify secret scanning can false-positive by finding env var *values*
+  # inside dependency files generated during the build (e.g. node_modules).
+  SECRETS_SCAN_OMIT_PATHS = "node_modules/**"
+  # These are backend-only env vars; omit them from secrets scanning for this static frontend deploy.
+  SECRETS_SCAN_OMIT_KEYS = "ACCESS_TOKEN_EXPIRE_MINUTES,ALGORITHM,DB_NAME,GMAIL_APP_PASSWORD,GMAIL_EMAIL,MONGODB_URL,OTP_EXPIRY_MINUTES,SECRET_KEY,SMTP_PORT,SMTP_SERVER"
+
