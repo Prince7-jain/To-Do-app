@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Patrick+Hand&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: '#F5F5F0',
+              'paper-dark': '#EBE7E0',
+              ink: '#2C2A29',
+              terracotta: '#CC6649',
+              olive: '#6B705C',
+              denim: '#4A6FA5',
+              mustard: '#E0A92C',
+              'pencil-gray': '#585858'
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              hand: ['"Patrick Hand"', 'cursive'],
+              mono: ['"Courier Prime"', 'monospace'],
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F5F5F0;
+        color: #2C2A29;
+        font-family: 'Cormorant Garamond', serif;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .font-feature-settings {
+        font-feature-settings: "liga" 1, "kern" 1; 
+      }
+      /* Custom scrollbar to look like a folded edge */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #EBE7E0; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #CC6649; 
+        border-radius: 2px;
+        border: 2px solid #EBE7E0;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
