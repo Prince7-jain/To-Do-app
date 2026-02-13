@@ -87,7 +87,7 @@ Tasks on a board: **filters** (All / Todo / In Progress / Done), **search**, and
 
 1. **Clone and install**
    ```bash
-   cd to-do-app-version
+   cd to-do-app
    cd frontend && npm install && cd ..
    cd backend && pip install -r requirements.txt && cd ..
    ```
